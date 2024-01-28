@@ -1,7 +1,6 @@
 <html>
-    <title>My website</title>
     <head>
-        <h3 style = "color: white">MY PORTFOLIO</h3>
+        <title>my portfolio</title>
     </head>
 
     <style>
@@ -11,8 +10,8 @@
         }
 
         body {
-            background-color: darkblue;
-            color: azure;
+            background-color: rgb(33, 35, 39);
+            color: white;
         }
 
         h2 {
@@ -27,59 +26,138 @@
         .flex-container {
             display: flex;
             flex-direction: row;
-            justify-content: space-between;
+            justify-content: center;
+            align-items: center;
+            height: 90vh;
+            margin-bottom: 10vh;
         }
 
         .flex-item {
             flex: 1;
-            height: 100vh;
         }
 
         a {
-            color: goldenrod;
+            color: #99bdf6;
+            margin-right: 10px;
+            margin-left: 10px;
+        }
+
+        .footer {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            color: white;
+        }
+
+        .header {
+            color: white;
+            width: 100%;
+            padding: 10px;
+            margin: 0px;
+            text-align: center;
+            top: 0;
+            left: 0;
+            position: fixed;
+        }
+        
+        dl {
+            margin-bottom: 55px;
+        }
+
+        dt {
+            font-size: 30px;
+        }
+
+        dd {
+            font-size: 20px;
         }
 
     </style>
 
     <body>
-        <h2>Hello, I am Anirudh Sridhar</h2>
-        <p style = "text-align: center; color: #ffffff">I am a sophomore at VIT Chennai, who likes to code and play games and listen to a lot of music. I am currently pursuing my Bachelor's degree in Computer Science and Engineering.</p>
+        <header class = "header">
+            <nav>
+                <a href = "#me">Me</a>
+                <a href = "#education">Education</a>
+                <a href = "#skills">Skills</a>
+                <a href = "#experience">Experience</a>
+            </nav>
+        </header>
 
         <div class = "flex-container">
             <div class = "flex-item">
-                <list>
-                    <dl style = "color: #ffffff">
-                        <dt><h4>Education:</h4></dt>
-                        <dd>Class X: DBMS Kadma High School, Jamshedpur</dd>
-                        <dd>Class XII: Velammal Vidyalaya, Chennai</dd>
-                        <dd>B.Tech CSE: VIT Chennai</dd>
-                    </dl>
-        
-                    <dl style = "color: #ffffff">
-                        <dt><h4>Skills:</h4></dt>
-                        <dd>Programming Languages: C, C++, Python, Java, HTML, CSS, JavaScript</dd>
-                    </dl>
-                </list>
+                <p style = "font-size: 40px; text-align: center;">Hello, I am Anirudh Sridhar</p>
             </div>
+        </div>
 
+        <div class = "flex-container" id = "me">
             <div class = "flex-item">
+                <p style = "font-size: 20px; text-align: center;">I am a sophomore at VIT Chennai. I am a gamer, a rookie full-stack developer and a music enthusiast.</p>
+                <p style = "font-size: 20px; text-align: center;">I have been working on various development projects over the last few months. My journey as a developer began last November, with the Smart India Hackathon. Ever since then, I have been actively trying to get better at what I do and find my niche in this space. I have since used APIs like Flask and FastAPI and frontend frameworks like Next.js and React.js and React Native in various projects.</p>
+        
+            </div>
+        </div>
+
+        <div class = "flex-container" id = "education">
+            <div class = "flex-items">
                 <list>
-                    <dl style = "color: #ffffff">
+                    <dl>
+                        <dt><h4>Education:</h4></dt>
+                        <dd>Class X: DBMS Kadma High School, Jamshedpur. I finished my 10th standard CBSE Education in jamshedpur scoring 90.4%.</dd>
+                        <dd>Class XII: Velammal Vidyalaya, Chennai. I finished my 12th standard CBSE Education in Chennai as a PCM with Comp Sci. student, scoring 89%.</dd>
+                        <dd>B.Tech CSE: VIT Chennai. I am currently pursuing my bachelor's degree in VIT Chennai. My current CGPA is 8.99 and I graduate in September, 2026.</dd>
+                    </dl>
+                    <dl>
                         <dt><h4>Credentials:</h4></dt>
+                        <dd><h4>You can contact me or check out my work using the following links:</h4></dd>
                         <dd><a href = "https://www.linkedin.com/in/anirudh-sridhar-07bb02298/">LinkedIn</a></dd>
                         <dd><a href = "https://github.com/shotoyaar">GitHub</a></dd>
                         <dd><a href = "https://leetcode.com/shotoyaar225/">LeetCode</a></dd>
                     </dl>
+                </list>
 
-                    <dl style = "color: #ffffff">
-                        <dt><h4>Hobbies:</h4></dt>
-                        <dd>Listening to music (I reeeeeeeeally love rock)</dd>
+            </div>
+        </div>
+
+        <div class = "flex-container" id = "skills">
+            <div class = "flex-items">
+                <list>
+                    <dl>
+                        <dt><h4>Skills:</h4></dt>
+                        <dd>These are some of the programming languages I am proficient in:</dd>
+                        <dd style = "margin-bottom: 35px; color: darkkhaki;">C, C++, Java, Python, JavaScript, HTML, CSS</dd>
+
+                        <dd>These are my skills outside programming:</dd>
+                        <dd style = "color: darkkhaki">I am an orator and writer. I possess leadership skills and am proficient in management aswell.</dd>
+                    </dl>
+                    <dl>
+                        <dt><h4>These are some of my hobbies:</h4></dt>
+                        <dd>Listening to music</dd>
                         <dd>Writing poems and stories</dd>
-                        <dd>GAMESSSS</dd>
+                        <dd>Video Games</dd>
                     </dl>
                 </list>
             </div>
         </div>
+
+        <div class = "flex-container" id = "experience">
+            <div class = "flex-items">
+                <list>
+                    <dl>
+                        <dt><h4>My Work Experience:</h4></dt>
+                        <dd>Social Media Intern, WLDD: 2021-2022. I was the admin and overall manager of 2 discord servers.</dd>
+                        <dd>Junior API Intern, CareTech UK: 2023-2023. I and my team were designated to make a TTS and STT engine.</dd>
+                        <dd>IEEE Computer Society, Management Team: 2023- Present.</dd>
+                    </dl>
+                </list>
+            </div>
+        </div>
+
+        <footer class = "footer">Anirudh Sridhar™</footer>
 
     </body>
 </html>
